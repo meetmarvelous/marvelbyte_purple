@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 300">
+  <rect x="0" y="100" width="1000" height="150" fill="#6c757d"/>
+  <rect x="50" y="110" width="800" height="100" fill="#f0ad4e"/>
+  <circle cx="180" cy="220" r="50" fill="#fff"/>
+  <circle cx="680" cy="220" r="50" fill="#fff"/>
+  <rect x="200" y="110" width="450" height="100" fill="#fff"/>
+  <rect x="450" y="110" width="200" height="100" fill="#d9534f"/>
+  <rect x="0" y="250" width="1000" height="50" fill="#6c757d"/>
+  <animateTransform 
+    attributeName="transform"
+    attributeType="XML"
+    type="translate"
+    values="0;1000;0"
+    dur="5s"
+    repeatCount="indefinite"
+  />
+</svg>

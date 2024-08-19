@@ -1,0 +1,26 @@
+Sure, here are 20 tech jobs with their function:
+
+| No. | Tech Job Title | Function |
+| --- | --- | --- |
+| 1 | Software Developer | Develop and maintain software applications |
+| 2 | Data Analyst | Analyze and interpret data to provide insights and recommendations |
+| 3 | Network Administrator | Install, configure and maintain network systems |
+| 4 | Cybersecurity Specialist | Ensure the security of computer systems and networks |
+| 5 | Product Manager | Oversee the development and launch of new products or services |
+| 6 | Cloud Architect | Design and oversee the implementation of cloud computing systems |
+| 7 | Mobile Application Developer | Develop and maintain mobile applications |
+| 8 | UX/UI Designer | Design user interfaces and user experiences for digital products |
+| 9 | Data Scientist | Use statistical and machine learning techniques to analyze and interpret complex data |
+| 10 | IT Project Manager | Plan, execute and oversee technology projects |
+| 11 | Database Administrator | Design, maintain and secure databases |
+| 12 | DevOps Engineer | Automate software development processes and manage software infrastructure |
+| 13 | Information Security Analyst | Protect computer systems and networks from security breaches |
+| 14 | Web Developer | Design and maintain websites and web applications |
+| 15 | Machine Learning Engineer | Build and deploy machine learning models |
+| 16 | Technical Writer | Create technical documentation for software and hardware products |
+| 17 | IT Support Specialist | Provide technical assistance to users of computer systems and software |
+| 18 | Video Game Developer | Create and maintain video games for various platforms |
+| 19 | Robotics Engineer | Design and develop robots and robotic systems |
+| 20 | Digital Marketing Manager | Develop and execute marketing strategies using digital channels |
+
+Note: This is not an exhaustive list of tech jobs and their functions, as there are many other roles within the tech industry.
