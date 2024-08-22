@@ -4,7 +4,7 @@
 
   <?php
 
-   $scollect = mysqli_query($con, "SELECT * FROM service");
+   $scollect = mysqli_query($dbcon, "SELECT * FROM service");
    $service = mysqli_fetch_array($scollect);
 
    ?>
@@ -19,7 +19,7 @@
         <div class="service_container owl-carousel owl-theme">
             <?php
             $x = 1;
-            $scollect = mysqli_query($con, "SELECT * FROM service");
+            $scollect = mysqli_query($dbcon, "SELECT * FROM service");
             while ($service = mysqli_fetch_array($scollect)) {
             ?>
 

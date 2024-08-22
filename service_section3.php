@@ -4,7 +4,7 @@
 
   <?php
 
-   $icd = mysqli_query($con, "SELECT * FROM icon");
+   $icd = mysqli_query($dbcon, "SELECT * FROM icon");
    $icon = mysqli_fetch_array($icd);
 
    ?>

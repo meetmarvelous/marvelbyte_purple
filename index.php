@@ -12,7 +12,7 @@
       <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <?php
-          $slid= mysqli_query($con, "SELECT * FROM slider");
+          $slid= mysqli_query($dbcon, "SELECT * FROM slider");
           $rowcount = mysqli_num_rows($slid);
           for($i=1; $i<=$rowcount; $i++)
           {

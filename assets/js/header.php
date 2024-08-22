@@ -3,7 +3,7 @@
   session_start();
 ?>
 <?php
-  $collect = mysqli_query($con, "SELECT * FROM site_info where site_id='1' ");
+  $collect = mysqli_query($dbcon, "SELECT * FROM site_info where site_id='1' ");
   $site = mysqli_fetch_array($collect);
   
 ?>

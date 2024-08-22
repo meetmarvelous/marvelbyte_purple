@@ -9,7 +9,7 @@
           $email =$_POST['email'];
           $message =$_POST['message'];
 
-        $submit = mysqli_query($con, "INSERT INTO contact (fullname, phone_no, email, message) VALUES('$fullname', '$phone_no', '$email', '$message') ");
+        $submit = mysqli_query($dbcon, "INSERT INTO contact (fullname, phone_no, email, message) VALUES('$fullname', '$phone_no', '$email', '$message') ");
 
         if($submit) {
           echo "<script>window.alert('message sent successfully'); window.location= 'index.php'</script>";

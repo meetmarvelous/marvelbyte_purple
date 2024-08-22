@@ -5,17 +5,17 @@ include("nav/nav_index.php");
 ?>
 
 <?php
-$book = mysqli_query($con, "SELECT * FROM ebook");
+$book = mysqli_query($dbcon, "SELECT * FROM ebook");
 $book_count = mysqli_num_rows($book);
 $ebook = mysqli_fetch_array($book);
-$user = mysqli_query($con, "SELECT * FROM user");
+$user = mysqli_query($dbcon, "SELECT * FROM user");
 $user_count = mysqli_num_rows($user);
-$blo = mysqli_query($con, "SELECT * FROM blog");
+$blo = mysqli_query($dbcon, "SELECT * FROM blog");
 $blog_count = mysqli_num_rows($blo);
 
 
 $getid = $_GET['id'];
-$ebook_edit = mysqli_query($con, "SELECT * FROM ebook where ebook_id='$getid'");
+$ebook_edit = mysqli_query($dbcon, "SELECT * FROM ebook where ebook_id='$getid'");
 $that_ebook = mysqli_fetch_array($ebook_edit);
 
 ?>
@@ -48,17 +48,17 @@ $that_ebook = mysqli_fetch_array($ebook_edit);
         // $typ = stripslashes($_POST["type"]);
         $year = stripslashes($_POST["year"]);
 
-        $title = mysqli_real_escape_string($con, $title);
-        $code = mysqli_real_escape_string($con, $code);
-        $department = mysqli_real_escape_string($con, $department);
-        $faculty = mysqli_real_escape_string($con, $faculty);
-        // $typ = mysqli_real_escape_string($con, $typ);
-        $year = mysqli_real_escape_string($con, $year);
+        $title = mysqli_real_escape_string($dbcon, $title);
+        $code = mysqli_real_escape_string($dbcon, $code);
+        $department = mysqli_real_escape_string($dbcon, $department);
+        $faculty = mysqli_real_escape_string($dbcon, $faculty);
+        // $typ = mysqli_real_escape_string($dbcon, $typ);
+        $year = mysqli_real_escape_string($dbcon, $year);
 
         $sql = "UPDATE ebook SET title='$title', code='$code', department='$department', faculty='$faculty', year='$year' where ebook_id='$getid' ";
 
         // Execute query
-        $save = mysqli_query($con, $sql);
+        $save = mysqli_query($dbcon, $sql);
 
         if ($save) {
           echo "<script>window.alert('File Info edited successfully!'); window.location='ebook.php';</script>";

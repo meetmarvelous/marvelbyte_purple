@@ -2,7 +2,7 @@
   include "../include/dbcon.php";
   // session_start();
 
-  $collect = mysqli_query($con, "SELECT * FROM site_info where site_id='10' ");
+  $collect = mysqli_query($dbcon, "SELECT * FROM site_info where site_id='10' ");
   $site = mysqli_fetch_array($collect);
   
 ?>
@@ -804,7 +804,7 @@
                 if(isset($_POST['submit2'])) {
                   $email2 =$_POST['email2'];
 
-                $submit2 = mysqli_query($con, "INSERT INTO newsletter (email) VALUES('$email2') ");
+                $submit2 = mysqli_query($dbcon, "INSERT INTO newsletter (email) VALUES('$email2') ");
 
                 if($submit2) {
                   echo "<script>window.alert('subscribed successfully'); window.location= 'index.php'</script>";

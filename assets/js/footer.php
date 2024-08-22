@@ -79,7 +79,7 @@
                 if(isset($_POST['submit2'])) {
                   $email2 =$_POST['email2'];
 
-                $submit2 = mysqli_query($con, "INSERT INTO newsletter (email) VALUES('$email2') ");
+                $submit2 = mysqli_query($dbcon, "INSERT INTO newsletter (email) VALUES('$email2') ");
 
                 if($submit2) {
                   echo "<script>window.alert('subscribed successfully'); window.location= 'index.php'</script>";

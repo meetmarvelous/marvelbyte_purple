@@ -5,11 +5,11 @@ include("nav/nav_index.php");
 ?>
 
 <?php
-$book = mysqli_query($con, "SELECT * FROM ebook");
+$book = mysqli_query($dbcon, "SELECT * FROM ebook");
 $book_count = mysqli_num_rows($book);
-$user = mysqli_query($con, "SELECT * FROM user");
+$user = mysqli_query($dbcon, "SELECT * FROM user");
 $user_count = mysqli_num_rows($user);
-$blo = mysqli_query($con, "SELECT * FROM blog");
+$blo = mysqli_query($dbcon, "SELECT * FROM blog");
 $blog_count = mysqli_num_rows($blo);
 ?>
 
@@ -56,7 +56,7 @@ $blog_count = mysqli_num_rows($blo);
                   <tbody>
                     <?php
                     $count = 1;
-                    $bok = mysqli_query($con, "SELECT * FROM ebook order by ebook_id DESC");
+                    $bok = mysqli_query($dbcon, "SELECT * FROM ebook order by ebook_id DESC");
                     while ($ebook = mysqli_fetch_array($bok)) {
                     ?>
 

@@ -2,7 +2,7 @@
   include "include/dbcon.php";
   // session_start();
 
-  $collect = mysqli_query($con, "SELECT * FROM site_info where site_id='10' ");
+  $collect = mysqli_query($dbcon, "SELECT * FROM site_info where site_id='10' ");
   $site = mysqli_fetch_array($collect);
   
 ?>
