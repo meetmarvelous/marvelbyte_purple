@@ -1,5 +1,5 @@
 <?php
-include('../connect.php');
+include('../include/connect.php');
 $query = mysqli_query($dbcon, "SELECT * FROM site_info");
 $site = mysqli_fetch_array($query);
 

@@ -1,5 +1,5 @@
 <?php 
-include('../connect.php');
+include('../include/connect.php');
 
 
 if (isset($_SESSION['admin_id']) || !empty($_SESSION['admin_id'])) {

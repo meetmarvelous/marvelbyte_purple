@@ -5,7 +5,7 @@ session_start();
 $dbhost 	= "localhost";
 $dbuser 	= "root";
 $dbpass 	= "";
-$dbname 	= "test_academy";
+$dbname 	= "marvelbyte";
 $charset 	= "utf8";
 
 $dbcon = mysqli_connect($dbhost, $dbuser, $dbpass);

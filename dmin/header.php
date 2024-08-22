@@ -1,7 +1,7 @@
 <?php
-require_once '../functions.php';
-require_once '../config.php';
-require_once '../connect.php';
+require_once '../include/functions.php';
+require_once '../include/config.php';
+require_once '../include/connect.php';
 
 
 $query = mysqli_query($dbcon, "SELECT * FROM site_info");
